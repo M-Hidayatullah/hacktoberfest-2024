@@ -1,15 +1,19 @@
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global Styles */
+/* Body styling for light mode (default) */
 body {
     background-color: white;
     color: black;
     font-family: Arial, sans-serif;
 }
 
+/* Header Styles */
 header {
     text-align: center;
     padding: 20px;
@@ -17,6 +21,8 @@ header {
     color: white;
 }
 
+/* Name List Section */
+/* Container for name items */
 .name-list {
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +30,7 @@ header {
     padding: 20px;
 }
 
+/* Individual name item */
 .name-item {
     margin: 15px;
     background-color: white;
@@ -34,10 +41,12 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Hover effect for name items */
 .name-item:hover {
     transform: scale(1.05);
 }
 
+/* Name item image */
 .name-item img {
     width: 150px;
     height: 150px;
@@ -45,11 +54,13 @@ header {
     border-bottom: 2px solid #333;
 }
 
+/* Name item heading */
 .name-item h2 {
     padding: 10px;
     font-size: 1.5rem;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px;
@@ -60,12 +71,8 @@ footer {
     bottom: 0;
 }
 
-/* Light mode styles */
-body {
-    background-color: white;
-    color: black;
-}
-
+/* Light Mode Styles */
+/* Toggle button for dark mode (default appearance) */
 button#dark-mode-toggle {
     position: fixed;
     top: 20px;
@@ -78,26 +85,37 @@ button#dark-mode-toggle {
     z-index: 1000;
 }
 
+/* Hover effect for the dark mode toggle button */
 button#dark-mode-toggle:hover {
     background-color: #ddd;
 }
 
-/* Dark mode styles */
+/* Dark Mode Styles */
+/* Dark mode body styling */
 body.dark-mode {
     background-color: #121212;
     color: #f1f1f1;
 }
 
+/* Dark mode styling for name items */
 body.dark-mode .name-item {
-    border-color: #333;
+    background-color: #222;
+    border-color: #444;
 }
 
+/* Dark mode styling for name item headings */
+body.dark-mode .name-item h2 {
+    color: #f1f1f1;
+}
+
+/* Dark mode styling for the dark mode toggle button */
 body.dark-mode button#dark-mode-toggle {
     background-color: #333;
     color: white;
     border: 1px solid #f1f1f1;
 }
 
-body.dark-mode .name-item h2 {
-    color: #f1f1f1;
+/* Dark mode hover effect for the toggle button */
+body.dark-mode button#dark-mode-toggle:hover {
+    background-color: #444;
 }
